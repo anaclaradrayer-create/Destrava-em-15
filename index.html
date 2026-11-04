@@ -23,7 +23,19 @@
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', window.PIXEL_ID);
-  fbq('track', 'PageView');
+  window.rastrear = function (nome, dados) {
+    var id = nome + '-' + Date.now() + '-' + Math.random().toString(36).slice(2, 9);
+    fbq('track', nome, dados || {}, { eventID: id });
+    var envia = function () {
+      try {
+        var ck = function (k) { var m = document.cookie.match('(?:^|; )' + k + '=([^;]*)'); return m ? m[1] : undefined; };
+        fetch('/api/evento', { method: 'POST', headers: { 'Content-Type': 'application/json' }, keepalive: true,
+          body: JSON.stringify({ event_name: nome, event_id: id, url: location.href, custom_data: dados, fbp: ck('_fbp'), fbc: ck('_fbc') }) }).catch(function () {});
+      } catch (e) {}
+    };
+    if (nome === 'PageView') setTimeout(envia, 1500); else envia();
+  };
+  rastrear('PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none" alt=""
   src="https://www.facebook.com/tr?id=1956594335794951&ev=PageView&noscript=1"></noscript>
@@ -493,19 +505,19 @@ const PRECO = 59.90;
 document.querySelectorAll('.js-checkout').forEach(a => {
   a.href = CHECKOUT_URL;
   a.addEventListener('click', () => {
-    if (window.fbq) fbq('track', 'InitiateCheckout', { value: PRECO, currency: 'BRL', content_name: 'Destrava em 15' });
+    if (window.fbq) rastrear('InitiateCheckout', { value: PRECO, currency: 'BRL', content_name: 'Destrava em 15' });
   });
 });
 document.querySelectorAll('.js-whatsapp').forEach(a => {
   a.href = 'https://wa.me/' + WHATSAPP_NUMERO + '?text=' + encodeURIComponent(WHATSAPP_MSG);
-  a.addEventListener('click', () => { if (window.fbq) fbq('track', 'Contact'); });
+  a.addEventListener('click', () => { if (window.fbq) rastrear('Contact'); });
 });
 
 /* quem rolou até o preço: evento para criar público no Meta */
 const inv = document.getElementById('investimento');
 if ('IntersectionObserver' in window && inv) {
   const io = new IntersectionObserver(es => {
-    if (es[0].isIntersecting) { if (window.fbq) fbq('track', 'ViewContent', { content_name: 'Destrava em 15 - preço', value: PRECO, currency: 'BRL' }); io.disconnect(); }
+    if (es[0].isIntersecting) { if (window.fbq) rastrear('ViewContent', { content_name: 'Destrava em 15 - preço', value: PRECO, currency: 'BRL' }); io.disconnect(); }
   }, { threshold: .4 });
   io.observe(inv);
 }
