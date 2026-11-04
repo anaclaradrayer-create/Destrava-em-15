@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destrava em 15 | Desafio online de 09 a 23 de novembro</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="15 dias para destravar o peso da balança, assumir o controle e fechar o ano com resultados. Desafio online com cardápio, treino, metas diárias e suporte.">
+<meta property="og:title" content="Destrava em 15">
+<meta property="og:description" content="15 dias para destravar o peso da balança, assumir o controle e fechar o ano com resultados.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#173327">
+
+<!-- =========================================================
+     PIXEL DA META
+     Pixel Destrava em 15
+     ========================================================= -->
+<script>
+  window.PIXEL_ID = '1956594335794951';
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', window.PIXEL_ID);
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=1956594335794951&ev=PageView&noscript=1"></noscript>
+<!-- Fim do pixel da Meta -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,700;112,800;125,900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#173327; --green-2:#1d3d30; --green-deep:#10261d;
+  --cream:#f8f5ee; --beige:#eee7da; --white:#ffffff;
+  --orange:#f47a36; --orange-dark:#d9631f; --rust:#b4531e;
+  --ink:#173327; --text:#3c4a43; --muted:#6a756f;
+  --line:#e6dfd2; --line-dark:rgba(255,255,255,.14);
+  --radius:16px; --shadow:0 6px 24px rgba(23,51,39,.07);
+  --head:'Archivo',system-ui,sans-serif; --body:'DM Sans',system-ui,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;overflow-x:hidden}
+html,body{max-width:100%;overflow-x:clip}
+body{font-family:var(--body);color:var(--text);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+section{padding:96px 0}
+.bg-cream{background:var(--cream)} .bg-beige{background:var(--beige)}
+.bg-green{background:var(--green);color:#e9efe9} .bg-deep{background:var(--green-deep);color:#e9efe9}
+
+/* tipografia */
+.eyebrow{font-family:var(--head);font-weight:700;font-stretch:112%;letter-spacing:.22em;text-transform:uppercase;color:var(--rust);font-size:clamp(.95rem,1.6vw,1.35rem);margin-bottom:10px}
+.bg-green .eyebrow,.bg-deep .eyebrow{color:var(--orange)}
+.eyebrow.sm{font-size:.82rem}
+h2{font-family:var(--head);font-weight:800;font-stretch:112%;color:var(--ink);font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.2;letter-spacing:-.01em}
+.bg-green h2,.bg-deep h2{color:#fff}
+.lead{max-width:560px;margin-top:10px;font-size:.98rem;color:var(--muted)}
+.bg-green .lead,.bg-deep .lead{color:#cfdad3}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#1b120c;font-family:var(--head);font-weight:800;font-stretch:112%;text-transform:uppercase;letter-spacing:.03em;font-size:.86rem;padding:15px 26px;border-radius:10px;box-shadow:0 8px 22px rgba(244,122,54,.28);transition:transform .15s,background .15s;border:0;cursor:pointer}
+.btn:hover{background:#ff8a47;transform:translateY(-2px)}
+.btn.block{width:100%}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:var(--green-deep);border-bottom:1px solid var(--line-dark)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-family:var(--head);font-weight:900;font-stretch:125%;color:#fff;letter-spacing:.02em}
+.logo span{color:var(--orange)}
+.nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+.nav ul a{color:#e9efe9;font-weight:600;font-size:.9rem}
+.nav ul a:hover{color:var(--orange)}
+.nav .btn{padding:10px 18px;font-size:.78rem;box-shadow:none}
+@media (max-width:860px){.nav ul li:not(:last-child){display:none}}
+
+/* HERO */
+.hero{background:var(--green);text-align:center;padding:110px 0 120px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -20% -60% -20%;height:70%;background:radial-gradient(closest-side,rgba(244,122,54,.12),transparent);pointer-events:none}
+.pill{display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 20px;font-family:var(--head);font-weight:700;font-stretch:112%;letter-spacing:.14em;font-size:.82rem;color:#f2f5f2;text-transform:uppercase}
+.hero h1{font-family:var(--head);font-weight:900;font-stretch:125%;line-height:.95;margin:34px 0 26px;font-size:clamp(3.4rem,10vw,7.4rem);color:#fff;letter-spacing:-.01em}
+.hero h1 span{display:block;color:var(--orange);font-size:.78em;margin-top:.12em}
+.hero p{color:#eef3ef;font-size:clamp(1rem,1.6vw,1.2rem);max-width:680px;margin:0 auto}
+.hero p strong{display:block;margin-top:16px}
+.hero .btn{margin-top:28px}
+.hero small{display:block;margin-top:16px;color:#c8d4cc;font-size:.88rem}
+
+/* cards genéricos */
+.grid{display:grid;gap:18px;margin-top:36px}
+.g4{grid-template-columns:repeat(4,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g5{grid-template-columns:repeat(5,1fr)}
+@media (max-width:960px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.g5{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.g4,.g3{grid-template-columns:1fr}.g5{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--white);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow);border:1px solid #efe9de}
+.ico{width:40px;height:40px;border-radius:10px;background:#e6efe8;color:var(--green);display:grid;place-items:center;margin-bottom:20px}
+.ico svg{width:20px;height:20px}
+.num{font-family:var(--head);font-weight:800;color:var(--rust);font-size:.78rem;letter-spacing:.12em;margin-bottom:8px}
+.card h3{font-family:var(--head);font-weight:700;font-stretch:112%;color:var(--ink);font-size:1.05rem;line-height:1.25;margin-bottom:8px}
+.card p{font-size:.9rem;color:var(--muted)}
+
+/* CARROSSEL de resultados */
+.car-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.arrows{display:flex;gap:8px;flex:none}
+.arrows button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:background .15s}
+.arrows button:hover{background:var(--ink);color:#fff}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:36px;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--ink) #fff}
+.track::-webkit-scrollbar{height:6px}.track::-webkit-scrollbar-track{background:#fff;border-radius:6px}.track::-webkit-scrollbar-thumb{background:var(--ink);border-radius:6px}
+.result{flex:0 0 min(420px,84%);scroll-snap-align:start;border-radius:14px;overflow:hidden;background:#fff}
+.result img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.hint{font-size:.82rem;color:var(--ink);font-weight:600;margin-top:6px}
+.section-cta{margin-top:32px}
+
+/* placeholder de imagem (some quando a foto carrega) */
+.ph{position:relative;background:repeating-linear-gradient(45deg,#e9e2d4 0 10px,#e3dbcb 10px 20px);overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph::before{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:10px;font-size:.72rem;font-weight:600;color:#8a8170}
+
+/* materiais */
+.mat .ph{aspect-ratio:4/5;background:#fff;border-radius:12px;border:1.5px dashed #cfc5b2}
+.mat .ph img{object-position:top center}
+.mat span{display:block;margin-top:10px;font-size:.85rem;font-weight:700;color:var(--ink)}
+
+/* premiação */
+.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+@media (max-width:760px){.prizes{grid-template-columns:1fr}}
+.prize{background:#fff;border-radius:var(--radius);padding:30px 22px;text-align:center;box-shadow:var(--shadow);border:1px solid #efe9de}
+.prize.first{border:1.5px solid var(--orange)}
+.prize svg{width:26px;height:26px;color:var(--ink);margin:0 auto 10px}
+.prize.first svg{color:var(--orange)}
+.prize h3{font-family:var(--head);font-weight:800;color:var(--ink);font-size:1.05rem;margin-bottom:14px}
+.prize div{background:var(--cream);border-radius:10px;padding:14px;font-size:.9rem;font-weight:600;color:var(--ink)}
+.criteria{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 24px;font-size:.9rem;color:var(--muted)}
+.criteria h4{font-family:var(--head);color:var(--ink);font-size:.98rem;margin-bottom:10px}
+.criteria p+p{margin-top:10px}
+
+/* como funciona */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px;position:relative}
+@media (max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.step{border:1px solid var(--line-dark);border-radius:14px;padding:24px 22px;background:rgba(255,255,255,.02)}
+.step .ring{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--orange);color:var(--orange);display:grid;place-items:center;margin-bottom:22px}
+.step .ring svg{width:18px;height:18px}
+.step .tag{font-family:var(--head);font-weight:800;color:var(--orange);font-size:.74rem;letter-spacing:.12em;margin-bottom:10px}
+.step h3{font-family:var(--head);font-weight:800;font-stretch:112%;color:#fff;font-size:1.05rem;line-height:1.25;margin-bottom:8px}
+.step p{font-size:.88rem;color:#cdd8d0}
+
+/* para você */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.checks{list-style:none;margin-top:24px;display:grid;gap:10px}
+.checks li{background:#fff;border-radius:10px;padding:13px 16px;font-size:.92rem;color:var(--ink);box-shadow:0 2px 10px rgba(23,51,39,.05)}
+.checks li::before{content:"✓ ";color:var(--ink);font-weight:700}
+.note{margin-top:16px;font-size:.9rem;color:var(--muted)}
+.expect{background:var(--beige);border-radius:20px;padding:36px 34px;font-size:.93rem;color:var(--text)}
+.expect h3{font-family:var(--head);font-weight:800;font-stretch:112%;color:var(--ink);font-size:1.25rem;margin-bottom:18px}
+.expect p+p{margin-top:14px}
+.expect strong{color:var(--ink)}
+
+/* profissionais */
+.pros{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+@media (max-width:760px){.pros{grid-template-columns:1fr}}
+.pro{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.pro .ph{aspect-ratio:16/10}
+.pro .ph img{object-position:center 25%}
+.pro div.info{padding:22px 24px 26px}
+.pro h3{font-family:var(--head);font-weight:800;color:var(--ink);font-size:1.08rem}
+.pro .role{color:var(--rust);font-size:.85rem;font-weight:600;margin:2px 0 10px}
+.pro p{font-size:.9rem;color:var(--muted)}
+.pros-foot{text-align:center;margin-top:28px;font-size:.95rem;color:var(--text)}
+
+/* investimento */
+.invest{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media (max-width:900px){.invest{grid-template-columns:1fr}}
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;list-style:none;margin-top:22px;font-size:.88rem;color:#e9efe9}
+.inc li::before{content:"✓ ";font-weight:700}
+.price{background:var(--cream);color:var(--ink);border-radius:20px;padding:34px 32px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.price .k{font-family:var(--head);font-weight:700;letter-spacing:.16em;font-size:.78rem;color:var(--muted);text-transform:uppercase}
+.price .from{margin-top:14px;font-size:1rem}
+.price .old{font-family:var(--head);font-weight:800;font-size:2.2rem;color:#7c8a84;text-decoration:line-through;text-decoration-thickness:3px;margin:6px 0}
+.price .now{font-family:var(--head);font-weight:900;font-stretch:112%;font-size:clamp(2.4rem,5vw,3.1rem);color:var(--ink);margin:4px 0 18px;line-height:1}
+.price .lim{text-align:center;color:#d93c1f;font-family:var(--head);font-weight:800;font-size:.95rem;margin-top:14px;letter-spacing:.02em}
+.alert{margin-top:16px;border:1px solid #f2b893;background:#fdf0e6;border-radius:10px;padding:14px 16px;font-size:.84rem;color:var(--text)}
+.alert b{display:block;color:#d93c1f;font-size:.82rem;margin-bottom:4px}
+.price .after{text-align:center;font-size:.85rem;color:var(--muted);margin-top:16px}
+
+/* FAQ */
+.faq{max-width:760px;margin-inline:auto}
+.faq details{background:#fff;border-radius:12px;margin-top:12px;box-shadow:0 2px 12px rgba(23,51,39,.06)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;gap:16px;font-size:.95rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--orange);font-size:1.3rem;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 22px 20px;font-size:.92rem;color:var(--muted)}
+
+/* final */
+.final{text-align:center}
+.final p{max-width:720px;margin:18px auto 0;color:#dfe7e1;text-align:justify;text-align-last:center}
+.final .lim{margin-top:22px;color:var(--orange);font-family:var(--head);font-weight:800;font-size:.85rem;letter-spacing:.04em}
+.final .btn{margin-top:14px}
+footer{background:var(--green-deep);color:#c9d4cd;text-align:center;font-size:.85rem;padding:24px 16px;border-top:1px solid var(--line-dark)}
+
+/* whatsapp flutuante */
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#08311a;font-weight:700;font-size:.85rem;padding:12px 16px;border-radius:999px;display:flex;align-items:center;gap:8px;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.wa svg{width:20px;height:20px}
+
+@media (max-width:640px){
+  section{padding:72px 0}
+  .hero{padding:80px 0 90px}
+  .car-head{flex-direction:column;align-items:flex-start}
+  .inc{grid-template-columns:1fr}
+  .price{padding:28px 22px}
+  .expect{padding:28px 22px}
+}
+</style>
+</head>
+<body>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav">
+  <div class="wrap">
+    <a href="#topo" class="logo">DESTRAVA<span>/15</span></a>
+    <ul>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#inclui">O que inclui</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#profissionais">Profissionais</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li><a href="#investimento" class="btn">Ver investimento</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="topo">
+  <div class="wrap">
+    <span class="pill">Desafio online | 09 a 23 de novembro</span>
+    <h1>DESTRAVA<span>EM 15</span></h1>
+    <p>15 dias para destravar o peso da balança, assumir o controle e fechar o ano com resultados.<strong>A sua melhor versão começa aqui!</strong></p>
+    <a href="#investimento" class="btn">Quero entrar no desafio</a>
+    <small>De 09 a 23 de novembro de 2026 · Online</small>
+  </div>
+</section>
+
+<!-- ======================= COMECE AGORA ======================= -->
+<section class="bg-cream" id="beneficios">
+  <div class="wrap">
+    <p class="eyebrow">Comece agora!</p>
+    <h2>Você não precisa esperar o próximo ano para começar!</h2>
+    <p class="lead">O Destrava em 15 é um primeiro passo para construir hábitos melhores. Comece antes de 2027, com estratégia e metas que cabem na sua rotina.</p>
+    <div class="grid g4">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></div>
+        <p class="num">01</p><h3>Sem abrir mão do que gosta</h3>
+        <p>Aprenda a fazer escolhas estratégicas sem excluir todos os alimentos de que gosta.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9zM7 21h10M19.5 12 22 6M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62"/></svg></div>
+        <p class="num">02</p><h3>Sem passar fome</h3>
+        <p>Estratégia alimentar pensada para favorecer a saciedade e respeitar suas necessidades.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.4 14.4 9.6 9.6M18.66 21.51a2 2 0 1 1-2.83-2.82l-1.77 1.77a2 2 0 1 1-2.83-2.83l6.37-6.36a2 2 0 1 1 2.83 2.82l-1.77 1.77a2 2 0 1 1 2.83 2.83zM21.5 21.5l-1.4-1.4M3.9 3.9 2.5 2.5M6.4 12.77a2 2 0 1 1-2.83-2.83l1.77-1.76a2 2 0 1 1-2.83-2.83l2.83-2.83a2 2 0 1 1 2.83 2.83l1.76-1.77a2 2 0 1 1 2.83 2.83z"/></svg></div>
+        <p class="num">03</p><h3>Sem dietas e exercícios malucos</h3>
+        <p>Direcionamento e opções práticas, sem recorrer a restrições extremas.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1zM7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
+        <p class="num">04</p><h3>Vida com equilíbrio</h3>
+        <p>Aproveite a família, os amigos e os eventos sociais com mais consciência.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= O QUE INCLUI ======================= -->
+<section class="bg-cream" id="inclui">
+  <div class="wrap">
+    <p class="eyebrow">O pacote completo</p>
+    <h2>Muito mais do que um cardápio!</h2>
+    <p class="lead">Direcionamento, organização e suporte para sair da intenção e começar a agir durante os 15 dias.</p>
+    <div class="grid g3">
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg></div><h3>Cardápio estratégico</h3><p>15 dias de opções gostosas, substituições e variedade, pensados para favorecer o emagrecimento e ajudar a reduzir o inchaço.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.4 14.4 9.6 9.6M18.66 21.51a2 2 0 1 1-2.83-2.82l-1.77 1.77a2 2 0 1 1-2.83-2.83l6.37-6.36a2 2 0 1 1 2.83 2.82l-1.77 1.77a2 2 0 1 1 2.83 2.83zM6.4 12.77a2 2 0 1 1-2.83-2.83l1.77-1.76a2 2 0 1 1-2.83-2.83l2.83-2.83a2 2 0 1 1 2.83 2.83l1.76-1.77a2 2 0 1 1 2.83 2.83z"/></svg></div><h3>Treino para academia e casa</h3><p>Ficha elaborada por Guilherme Cangussu, com alternativas para diferentes rotinas de treino.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Metas e desafios diários</h3><p>Tarefas práticas para organizar a rotina, manter a motivação e desenvolver constância.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg></div><h3>Materiais de fim de ano</h3><p>Orientações para escolhas mais conscientes nas confraternizações e momentos especiais.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Grupo no WhatsApp</h3><p>Um espaço exclusivo de suporte, motivação e incentivo durante o desafio.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></div><h3>Mentorias e dúvidas</h3><p>Orientações sobre o cardápio, a organização da rotina e a execução do desafio.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7ZM8.5 8.5l7 7"/></svg></div><h3>Orientações gerais sobre medicamentos</h3><p>Informações gerais para quem usa medicamentos para emagrecimento, incluindo cuidados e sinais de atenção. Não substituem acompanhamento médico nem alteram prescrições.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div><h3>Premiação</h3><p>Reconhecimento por dedicação e participação, conforme critérios previamente divulgados.</p></article>
+      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></div><h3>Black Friday antecipada</h3><p>Acesso antecipado a uma condição especial para conhecer a proposta de acompanhamento contínuo dos profissionais.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MATERIAIS ======================= -->
+<section class="bg-beige">
+  <div class="wrap">
+    <h2>Tudo preparado para você começar!</h2>
+    <p class="lead">Prévia dos materiais que você irá receber no desafio</p>
+    <div class="grid g5">
+      <div class="mat"><div class="ph" data-label="material-cardapio.jpg"><img src="/material-cardapio.jpg" alt="Prévia do cardápio" loading="lazy" onerror="this.remove()"></div><span>Cardápio</span></div>
+      <div class="mat"><div class="ph" data-label="material-treino.jpg"><img src="/material-treino.jpg" alt="Prévia da ficha de treino" loading="lazy" onerror="this.remove()"></div><span>Ficha de treino</span></div>
+      <div class="mat"><div class="ph" data-label="material-meta.jpg"><img src="/material-meta.jpg" alt="Prévia da meta diária" loading="lazy" onerror="this.remove()"></div><span>Meta diária</span></div>
+      <div class="mat"><div class="ph" data-label="material-educativo.jpg"><img src="/material-educativo.jpg" alt="Prévia do material educativo" loading="lazy" onerror="this.remove()"></div><span>Material educativo</span></div>
+      <div class="mat"><div class="ph" data-label="material-suporte.jpg"><img src="/material-suporte.jpg" alt="Prévia do recurso de suporte" loading="lazy" onerror="this.remove()"></div><span>Recurso de suporte</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PREMIAÇÃO ======================= -->
+<section class="bg-cream">
+  <div class="wrap">
+    <div class="center">
+      <h2>Sua dedicação merece ser reconhecida!</h2>
+      <p class="lead">A participação será acompanhada conforme critérios de avaliação previamente divulgados.</p>
+    </div>
+    <div class="prizes">
+      <div class="prize first"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15M11 12 5.12 2.2M13 12l5.88-9.8M8 7h8"/><circle cx="12" cy="17" r="5"/><path d="M12 18v-2h-.5"/></svg><h3>1º LUGAR</h3><div>1 mês de acompanhamento com a nutricionista Angélica e o Educador físico Guilherme + reavaliação + brindes</div></div>
+      <div class="prize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15M11 12 5.12 2.2M13 12l5.88-9.8M8 7h8"/><circle cx="12" cy="17" r="5"/></svg><h3>2º LUGAR</h3><div>1 Whey Protein</div></div>
+      <div class="prize"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15M11 12 5.12 2.2M13 12l5.88-9.8M8 7h8"/><circle cx="12" cy="17" r="5"/></svg><h3>3º LUGAR</h3><div>1 Creatina</div></div>
+    </div>
+    <div class="criteria">
+      <h4>Critérios de premiação</h4>
+      <p>A avaliação dos resultados será realizada por meio da comparação das fotos corporais, que deverão ser enviadas no privado no início e ao final do desafio.</p>
+      <p>Em caso de empate, serão considerados como critérios de desempate a participação no grupo e o cumprimento das metas diárias, com os registros enviados no grupo conforme as orientações.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= COMO FUNCIONA ======================= -->
+<section class="bg-green" id="como-funciona">
+  <div class="wrap">
+    <p class="eyebrow sm">Como funciona?</p>
+    <h2>Seu próximo passo começa aqui!</h2>
+    <div class="steps">
+      <div class="step"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2ZM9 9h.01M15 15h.01M16 8l-8 8"/></svg></div><p class="tag">01 / INSCRIÇÃO</p><h3>Garanta sua vaga</h3><p>Inscreva-se e confirme sua participação no desafio.</p></div>
+      <div class="step"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><p class="tag">02 / PREPARAÇÃO</p><h3>Entre no grupo de suporte</h3><p>Receba as informações iniciais e prepare-se para começar.</p></div>
+      <div class="step"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4V8z"/></svg></div><p class="tag">09.11.2026</p><h3>Início do desafio — 09/11/2026</h3><p>Comece com cardápio, treino, metas diárias e suporte.</p></div>
+      <div class="step"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></svg></div><p class="tag">23.11.2026</p><h3>Encerramento do desafio — 23/11/2026</h3><p>Confira sua evolução e participe da etapa de premiação conforme os critérios estabelecidos.</p></div>
+    </div>
+    <a href="#investimento" class="btn section-cta">Quero entrar no desafio</a>
+  </div>
+</section>
+
+<!-- ======================= PARA VOCÊ QUE ======================= -->
+<section class="bg-cream">
+  <div class="wrap two">
+    <div>
+      <h2>O Destrava em 15 é para você que…</h2>
+      <ul class="checks">
+        <li>Quer terminar o ano se sentindo melhor com o próprio corpo.</li>
+        <li>Precisa de direcionamento e rotina.</li>
+        <li>Está cansado de começar dietas e não conseguir manter.</li>
+        <li>Perdeu o ritmo e quer se reorganizar.</li>
+        <li>Quer melhorar a condição física e a saúde.</li>
+        <li>Busca hábitos mais consistentes e mudanças duradouras.</li>
+      </ul>
+      <p class="note">Você não precisa esperar o momento perfeito. Comece com uma estratégia que faça sentido para sua rotina.</p>
+    </div>
+    <div class="expect">
+      <h3>Vamos alinhar as expectativas?</h3>
+      <p><strong>Não prometo milagres nem resultados garantidos em 15 dias. Esse desafio não é pra quem busca alimentos milagrosos, treinos impossíveis ou fórmulas mágicas.</strong> É um começo com orientação e estratégia, não um substituto para cuidados individualizados.</p>
+      <p>Não é indicado pra gestantes e lactantes.</p>
+      <p>Sua jornada é única! Não se compare com outras pessoas; compare-se com quem você era ontem. O seu progresso é individual, e cada conquista conta!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROFISSIONAIS ======================= -->
+<section class="bg-beige" id="profissionais">
+  <div class="wrap">
+    <h2>Você não estará sozinho nessa jornada!</h2>
+    <div class="pros">
+      <article class="pro">
+        <div class="ph" data-label="angelica.jpg"><img src="/angelica.jpg" alt="Angélica Soyer, nutricionista" loading="lazy" onerror="this.remove()"></div>
+        <div class="info"><h3>Angélica Soyer</h3><p class="role">Nutricionista</p><p>Responsável pela estratégia nutricional, cardápio, orientações alimentares e educação nutricional.</p></div>
+      </article>
+      <article class="pro">
+        <div class="ph" data-label="guilherme.jpg"><img src="/guilherme.jpg" alt="Guilherme Cangussu, treinador físico" loading="lazy" onerror="this.remove()"></div>
+        <div class="info"><h3>Guilherme Cangussu</h3><p class="role">Treinador físico</p><p>Responsável pelos treinos e orientações de exercícios, com alternativas para academia e casa. Idealizador do projeto SECA 40.</p></div>
+      </article>
+    </div>
+    <p class="pros-foot">Uma parceria para dar os primeiros passos com mais organização, orientação e constância.</p>
+  </div>
+</section>
+
+<!-- ======================= INVESTIMENTO ======================= -->
+<section class="bg-deep" id="investimento">
+  <div class="wrap invest">
+    <div>
+      <p class="eyebrow">Investimento</p>
+      <h2>Tudo isso para você começar a mudar sua rotina.</h2>
+      <p class="lead">São 15 dias para investir em você, com direcionamento nutricional, treino, metas e suporte. Um pacote para começar a cuidar melhor de si, fortalecer sua constância e terminar o ano na sua melhor versão!</p>
+      <ul class="inc">
+        <li>Cardápio de 15 dias</li><li>Treino para academia e casa</li>
+        <li>Metas e desafios diários</li><li>Materiais exclusivos</li>
+        <li>Grupo no WhatsApp</li><li>Mentorias e dúvidas</li>
+        <li>Orientações gerais sobre medicamentos</li><li>Premiação</li>
+        <li>Black Friday antecipada</li>
+      </ul>
+    </div>
+    <div class="price">
+      <p class="k">Desafio Destrava em 15</p>
+      <p class="from">Todo esse suporte e entrega sairia no valor de:</p>
+      <p class="old">R$ 179,90</p>
+      <p class="from">Mas hoje, você vai garantir tudo isso por…</p>
+      <p class="now">R$ 59,90</p>
+      <!-- Troque o link do checkout em CHECKOUT_URL, lá no final da página -->
+      <a href="#" class="btn block js-checkout">Quero entrar no desafio</a>
+      <p class="lim">VAGAS LIMITADAS!</p>
+      <div class="alert"><b>⚠ ATENÇÃO: CONDIÇÕES ESPECIAIS!</b>Alunos do Guilherme e pacientes da Angélica têm condições especiais para participar do desafio. Consulte seu profissional antes de realizar a inscrição.</div>
+      <p class="after">Inscreva-se e receba as orientações para começar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="bg-cream" id="duvidas">
+  <div class="wrap faq">
+    <h2>Ainda tem dúvidas?</h2>
+    <details><summary>O desafio é online?</summary><p>Sim! Todo o desafio acontece online, de 09 a 23 de novembro de 2026. Você recebe os materiais e acompanha tudo pelo grupo no WhatsApp, de onde estiver.</p></details>
+    <details><summary>Como recebo meu material?</summary><p>Depois da inscrição, você entra no grupo de suporte e recebe as orientações iniciais. Os materiais (cardápio, ficha de treino e metas diárias) são enviados em formato digital para você acessar pelo celular.</p></details>
+    <details><summary>Posso treinar em casa?</summary><p>Pode! A ficha de treino tem alternativas para academia e para casa, para se adaptar à sua rotina.</p></details>
+    <details><summary>Já tenho dieta ou treino. Pago menos?</summary><p>Alunos do Guilherme e pacientes da Angélica têm condições especiais para participar. Fale com seu profissional antes de fazer a inscrição.</p></details>
+    <details><summary>E se eu não conseguir seguir tudo?</summary><p>Tudo bem! O desafio é sobre progresso, não perfeição. As metas são pensadas para caber na sua rotina, e o grupo existe justamente para te ajudar a retomar quando sair do ritmo.</p></details>
+  </div>
+</section>
+
+<!-- ======================= CTA FINAL ======================= -->
+<section class="bg-green final">
+  <div class="wrap">
+    <p class="eyebrow">O primeiro passo é seu</p>
+    <h2>Daqui a 15 dias, você pode estar mais perto da pessoa que deseja se tornar.</h2>
+    <p>Não espere o próximo ano. Dê o primeiro passo, organize sua rotina e comece a transformar escolhas em hábitos. Sua transformação não começa quando tudo fica perfeito. Ela começa quando você decide dar o primeiro passo.</p>
+    <p class="lim">VAGAS LIMITADAS!</p>
+    <a href="#" class="btn js-checkout">Quero destravar em 15 dias</a>
+  </div>
+</section>
+
+<footer>Desafio Destrava em 15 · 09 a 23 de novembro de 2026 · Não indicado para gestantes. Condições de saúde específicas exigem orientação individualizada.</footer>
+
+<a class="wa js-whatsapp" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9a11.82 11.82 0 0 0-3.48-8.41"/></svg>
+  Falar no WhatsApp
+</a>
+
+<script>
+/* =========================================================
+   CONFIGURAÇÕES: troque os links aqui
+   ========================================================= */
+const CHECKOUT_URL = 'https://pay.kiwify.com.br/A3XVRvC';   // link de pagamento (Hotmart, Kiwify, Mercado Pago...)
+const WHATSAPP_NUMERO = '5531972645626';               // DDI + DDD + número, só números
+const WHATSAPP_MSG = 'Oi! Quero saber mais sobre o Destrava em 15 🔥';
+const PRECO = 59.90;
+
+/* links */
+document.querySelectorAll('.js-checkout').forEach(a => {
+  a.href = CHECKOUT_URL;
+  a.addEventListener('click', () => {
+    if (window.fbq) fbq('track', 'InitiateCheckout', { value: PRECO, currency: 'BRL', content_name: 'Destrava em 15 - anuncio' });
+  });
+});
+document.querySelectorAll('.js-whatsapp').forEach(a => {
+  a.href = 'https://wa.me/' + WHATSAPP_NUMERO + '?text=' + encodeURIComponent(WHATSAPP_MSG);
+  a.addEventListener('click', () => { if (window.fbq) fbq('track', 'Contact'); });
+});
+
+/* quem rolou até o preço: evento para criar público no Meta */
+const inv = document.getElementById('investimento');
+if ('IntersectionObserver' in window && inv) {
+  const io = new IntersectionObserver(es => {
+    if (es[0].isIntersecting) { if (window.fbq) fbq('track', 'ViewContent', { content_name: 'Destrava em 15 - preço', value: PRECO, currency: 'BRL' }); io.disconnect(); }
+  }, { threshold: .4 });
+  io.observe(inv);
+}
+
+/* setas do carrossel */
+const track = document.getElementById('track');
+if (track) document.querySelectorAll('.arrows button').forEach(b => {
+  b.addEventListener('click', () => {
+    const card = track.querySelector('.result');
+    const step = card ? card.getBoundingClientRect().width + 16 : 300;
+    track.scrollBy({ left: step * Number(b.dataset.dir), behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
