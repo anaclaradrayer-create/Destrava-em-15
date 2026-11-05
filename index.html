@@ -34,7 +34,7 @@
           body: JSON.stringify({ event_name: nome, event_id: id, url: location.href, custom_data: dados, fbp: ck('_fbp'), fbc: ck('_fbc') }) }).catch(function () {});
       } catch (e) {}
     };
-    if (nome === 'PageView') setTimeout(envia, 1500); else envia();
+    /* envio pelo servidor desativado: a Meta ja espelha os eventos (API de Conversoes com a Meta) */
   };
   rastrear('PageView');
 </script>
