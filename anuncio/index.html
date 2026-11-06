@@ -474,8 +474,11 @@ const WHATSAPP_MSG = 'Oi! Quero saber mais sobre o Destrava em 15 🔥';
 const PRECO = 59.90;
 
 /* links */
+/* repassa UTMs do anuncio (utm_*, src, sck) para o checkout da Kiwify */
+const RASTREIO = (() => { const keep = new URLSearchParams(); new URLSearchParams(location.search).forEach((v, k) => { if (/^utm_|^src$|^sck$/.test(k)) keep.set(k, v); }); try { if ([...keep].length) sessionStorage.setItem('utms', keep.toString()); else { const s = sessionStorage.getItem('utms'); if (s) return new URLSearchParams(s); } } catch (e) {} return keep; })();
+const LINK_CHECKOUT = (() => { const u = new URL(CHECKOUT_URL); RASTREIO.forEach((v, k) => u.searchParams.set(k, v)); return u.toString(); })();
 document.querySelectorAll('.js-checkout').forEach(a => {
-  a.href = CHECKOUT_URL;
+  a.href = LINK_CHECKOUT;
   a.addEventListener('click', () => {
     if (window.fbq) rastrear('InitiateCheckout', { value: PRECO, currency: 'BRL', content_name: 'Destrava em 15 - anuncio' });
   });
